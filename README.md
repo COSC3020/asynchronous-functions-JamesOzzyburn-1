@@ -21,3 +21,7 @@ this.
 
 What is the time complexity of your implementation (worst-case $\Theta$)? Add
 your answer, including your reasoning, to this markdown file.
+
+
+## Answer
+For my code I chose to write it in c++ just to try something different. My code starts out by making 2 copies of the original array and each copy only has half of the array so im thinking the runtime for that would be $2*(n/2)$ where $n$ is the size of the original array so effectivly I believe its just $n$ for this part. For the compute part I create two async calls which return their own future and each async call just loops though the array and counts all of the matches which is $n$. The only part im not really sure on is as we spawn two async calls we make two threads so and each thread is doing half of the work it would do if the code was single threaded but there is two calls so intuitively I think this is also $2*(n/2)$ which is just $n$. So in total I believe my code is $\Theta(n + n)$ which can be simplified to $\Theta(n)$. 
