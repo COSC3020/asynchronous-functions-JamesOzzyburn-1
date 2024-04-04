@@ -8,13 +8,13 @@ https://www.geeksforgeeks.org/measure-execution-time-function-cpp/ //Only used f
 https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/ //Only used for the randomized testing
 https://www.geeksforgeeks.org/find-all-occurrences-of-element-in-vector/ //Only used for the randomized testing
 
-https://github.com/doctest/doctest //Testing framework
+https://github.com/doctest/doctest //Testing framework not mine
 */
 
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN //To set up the testing framework
 #include "doctest.h" //Same comment as above
 
-#include <vector> //Vector is effectivly the same as an array I just used it as you can get iterators from it
+#include <vector> //Vector is effectivly the same as an array I just used it as you can get iterators from it. From this article https://stackoverflow.com/questions/381621/using-arrays-or-stdvectors-in-c-whats-the-performance-gap 
 #include <future> //For the async stuff
 
 //Only used if you want to time
